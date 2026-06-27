@@ -5,7 +5,7 @@ const experiences = [
   {
     company: 'Tata Group (Forage)',
     role: 'GenAI Analytics Associate',
-    period: 'March 2026 – April 2026',
+    period: 'March 2025 – April 2026',
     achievements: [
       'Executed end-to-end data analytics workflows using Generative AI for financial risk assessment.',
       'Conducted exploratory data analysis (EDA) and built risk profiling models for customer segmentation.',
