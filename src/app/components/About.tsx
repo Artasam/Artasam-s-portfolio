@@ -1,19 +1,53 @@
 import { motion } from 'motion/react';
 import { Brain, Code2, Database, Sparkles, Cpu, Cloud, GitBranch, Terminal, Layers, Search, ShieldCheck, Zap } from 'lucide-react';
 
-const skills = [
-  { name: 'Python', icon: Terminal },
-  { name: 'TensorFlow', icon: Sparkles },
-  { name: 'PyTorch', icon: Brain },
-  { name: 'Scikit-Learn', icon: Code2 },
-  { name: 'SQL', icon: Database },
-  { name: 'LangChain', icon: GitBranch },
-  { name: 'Docker', icon: Layers },
-  { name: 'Git', icon: GitBranch },
-  { name: 'MLflow', icon: Cloud },
-  { name: 'Streamlit', icon: Search },
-  { name: 'FastAPI', icon: Zap },
-  { name: 'GitHub Actions', icon: Cpu },
+const skillCategories = [
+  {
+    category: 'LLM Orchestration',
+    skills: [
+      { name: 'LangChain', icon: GitBranch },
+      { name: 'LangGraph', icon: Layers },
+      { name: 'OpenAI API', icon: Sparkles },
+      { name: 'Groq API', icon: Zap },
+      { name: 'Prompt Eng.', icon: Brain },
+    ],
+  },
+  {
+    category: 'ML / DL Frameworks',
+    skills: [
+      { name: 'Python', icon: Terminal },
+      { name: 'TensorFlow', icon: Cpu },
+      { name: 'PyTorch', icon: Brain },
+      { name: 'Scikit-Learn', icon: Code2 },
+      { name: 'Hugging Face', icon: Sparkles },
+      { name: 'OpenCV', icon: Search },
+      { name: 'spaCy', icon: Code2 },
+      { name: 'LightGBM', icon: Zap },
+      { name: 'XGBoost', icon: Zap },
+    ],
+  },
+  {
+    category: 'Data & Search',
+    skills: [
+      { name: 'SQL', icon: Database },
+      { name: 'SHAP', icon: Search },
+      { name: 'TF-IDF', icon: Layers },
+      { name: 'Chroma DB', icon: Database },
+      { name: 'S-BERT', icon: Brain },
+    ],
+  },
+  {
+    category: 'Deployment & MLOps',
+    skills: [
+      { name: 'Docker', icon: Layers },
+      { name: 'FastAPI', icon: Zap },
+      { name: 'Streamlit', icon: Code2 },
+      { name: 'MLflow', icon: Cloud },
+      { name: 'Git', icon: GitBranch },
+      { name: 'GitHub Actions', icon: Cpu },
+      { name: 'AWS', icon: Cloud },
+    ],
+  },
 ];
 
 export function About() {
@@ -91,28 +125,43 @@ export function About() {
               Technical Stack
             </h4>
             
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6">
-              {skills.map((skill, index) => {
-                const Icon = skill.icon;
-                return (
-                   <motion.div
-                    key={skill.name}
-                    whileHover={{ y: -5 }}
-                    className="group"
-                  >
-                    <div className="w-full aspect-square rounded-xl sm:rounded-2xl bg-zinc-900 border border-zinc-800 flex flex-col items-center justify-center gap-2 sm:gap-3 group-hover:border-rose-600/30 group-hover:bg-rose-600/5 transition-all p-3">
-                      <Icon className="w-6 h-6 sm:w-8 sm:h-8 text-zinc-500 group-hover:text-rose-500 transition-colors" />
-                      <p className="text-[8px] sm:text-[10px] font-bold text-zinc-500 group-hover:text-white uppercase tracking-widest transition-colors text-center">{skill.name}</p>
-                    </div>
-                  </motion.div>
-                );
-              })}
+            <div className="space-y-6 sm:space-y-8">
+              {skillCategories.map((cat, catIndex) => (
+                <motion.div
+                  key={cat.category}
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: catIndex * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  <p className="text-[9px] sm:text-[10px] font-bold text-rose-600 uppercase tracking-[0.2em] mb-3 sm:mb-4">
+                    {cat.category}
+                  </p>
+                  <div className="flex flex-wrap gap-2 sm:gap-3">
+                    {cat.skills.map((skill) => {
+                      const Icon = skill.icon;
+                      return (
+                        <motion.div
+                          key={skill.name}
+                          whileHover={{ y: -3, scale: 1.05 }}
+                          className="group"
+                        >
+                          <div className="flex items-center gap-2 px-3 sm:px-4 py-2 sm:py-2.5 bg-zinc-900 border border-zinc-800 rounded-lg sm:rounded-xl group-hover:border-rose-600/30 group-hover:bg-rose-600/5 transition-all cursor-default">
+                            <Icon className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-zinc-600 group-hover:text-rose-500 transition-colors flex-shrink-0" />
+                            <span className="text-[9px] sm:text-[10px] font-bold text-zinc-400 group-hover:text-white uppercase tracking-wider transition-colors whitespace-nowrap">{skill.name}</span>
+                          </div>
+                        </motion.div>
+                      );
+                    })}
+                  </div>
+                </motion.div>
+              ))}
             </div>
             
             <div className="mt-10 pt-10 border-t border-zinc-800">
               <p className="text-[10px] font-bold text-zinc-500 uppercase tracking-[0.2em] mb-6">Advanced Domains</p>
               <div className="flex flex-wrap gap-2">
-                {['Generative AI', 'Agentic Systems', 'Computer Vision', 'NLP Architecture', 'MLOps Engineering', 'Vector Databases'].map((domain) => (
+                {['Generative AI', 'Agentic Systems', 'Computer Vision', 'NLP Architecture', 'MLOps Engineering', 'Vector Databases', 'RAG Pipelines', 'Prompt Engineering', 'Stable Diffusion'].map((domain) => (
                   <span key={domain} className="px-3 py-1.5 text-[10px] font-bold text-white bg-zinc-900 border border-zinc-800 rounded-md uppercase tracking-wider">
                     {domain}
                   </span>

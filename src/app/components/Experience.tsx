@@ -74,11 +74,11 @@ export function Experience() {
                       <Briefcase className="w-6 h-6" />
                     </div>
                     <div>
-                  <h4 className="text-lg sm:text-2xl font-bold text-white group-hover:text-rose-500 transition-colors">{exp.company}</h4>
-                  <p className="text-rose-600 font-bold text-[9px] sm:text-xs uppercase tracking-widest mt-1">{exp.role}</p>
+                      <h4 className="text-lg sm:text-2xl font-bold text-white group-hover:text-rose-500 transition-colors">{exp.company}</h4>
+                      <p className="text-rose-600 font-bold text-[9px] sm:text-xs uppercase tracking-widest mt-1">{exp.role}</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center gap-2 text-zinc-500 font-mono text-xs uppercase tracking-widest">
                     <Calendar className="w-4 h-4" />
                     {exp.period}

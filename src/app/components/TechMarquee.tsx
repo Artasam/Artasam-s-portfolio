@@ -3,18 +3,23 @@ import { motion } from 'motion/react';
 const techs = [
   "Machine Learning",
   "LLM & RAG",
-  "Cloud & DevOps",
-  "Custom Software",
-  "SaaS Platforms",
-  "IoT Systems",
-  "Next.js",
-  "React",
-  "Flutter",
+  "Prompt Engineering",
+  "Agentic AI",
+  "Computer Vision",
+  "NLP",
+  "MLOps",
+  "LangChain",
+  "LangGraph",
+  "OpenAI API",
   "PyTorch",
   "TensorFlow",
-  "Agentic AI",
+  "Hugging Face",
+  "Vector Search",
+  "Stable Diffusion",
   "Data Engineering",
-  "MLOps"
+  "Next.js",
+  "React",
+  "Node.js",
 ];
 
 export function TechMarquee() {
