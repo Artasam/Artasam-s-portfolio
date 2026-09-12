@@ -3,15 +3,15 @@ import { Briefcase, Calendar, CheckCircle2 } from 'lucide-react';
 
 const experiences = [
   {
-    company: 'Tata Group (Forage)',
-    role: 'GenAI Analytics Associate',
-    period: 'March 2025 – April 2026',
+    company: 'FlyRank AI',
+    role: 'Machine Learning Intern',
+    period: 'Jul 2026 – Sep 2026',
     achievements: [
-      'Executed end-to-end data analytics workflows using Generative AI for financial risk assessment.',
-      'Conducted exploratory data analysis (EDA) and built risk profiling models for customer segmentation.',
-      'Applied machine learning techniques to predict delinquency and optimize decision-making.',
-      'Delivered data-driven business insights through reports and storytelling for collections strategy.',
-      'Designed an AI-powered collections framework to improve operational efficiency and recovery rates.',
+      'Processed multi-tenant search performance data from ~79M-row distributed warehouse (DuckDB/SQL), auditing 92,548 pages across 40 enterprise clients with zero storage bottlenecks.',
+      'Engineered domain-informed ranking baseline (striking-distance weights, non-linear CTR shields) achieving 0.64 Precision@50 (1.73x lift) and 0.75 Precision@20 on unseen enterprise domains.',
+      'Discovered and proved a 50-percentage-point memorization trap (Random Split P@20: 0.90 vs. Grouped Split: 0.40), preventing production deployment of an overfitted LightGBM model.',
+      'Architected a zero-leakage temporal evaluation harness (15-day historical feature window vs. 16-day future label window, 0-day overlap) verified against 7 internal decision flags.',
+      'Shipped an automated content-action playbook with interpretable reason codes and a 5-step human-in-the-loop review framework for high-ROI search queries.',
     ],
   },
   {
@@ -19,10 +19,10 @@ const experiences = [
     role: 'Data Science Intern',
     period: 'Dec 2025 – Feb 2026',
     achievements: [
-      'Engineered Air Quality Index prediction system using real-time API data and ensemble learning.',
-      'Implemented robust CI/CD pipelines for automated model retraining and production deployment.',
-      'Optimized data processing workflows for high-frequency environmental sensor data.',
-      'Deployed scalable ML models with integrated monitoring and automated alerting systems.',
+      'Architected a production forecasting system automating manual reporting end-to-end on real-time API feeds; XGBoost model achieved RMSE 0.66, R² 0.99, outperforming Random Forest by 20%.',
+      'Integrated Hopsworks Feature Store for feature versioning and model registry; GitHub Actions CI/CD eliminated manual retraining overhead across 60+ consecutive operational days.',
+      'Engineered time-based, rolling-statistics, and lag features across a fully serverless data-processing stack with hourly ingestion and daily automated retraining pipelines.',
+      'Implemented SHAP explainability visualizations and real-time hazard alerts for environmental sensor monitoring.',
     ],
   },
   {
@@ -30,10 +30,20 @@ const experiences = [
     role: 'AI/ML Intern',
     period: 'July 2025 – Sept 2025',
     achievements: [
-      'Architected an AI-driven Resume Screening system utilizing advanced transformer-based NLP.',
-      'Developed classification models to predict candidate categories with industry-leading accuracy.',
-      'Leveraged LangChain and semantic embeddings for high-precision document matching.',
-      'Streamlined HR workflows by integrating automated candidate-job fit analysis.',
+      'Built an AI-powered Resume Analyser for automated text extraction & classification: Logistic Regression + TF-IDF classifier achieving 87% accuracy across 24 job categories on 2,400 documents (sub-1s inference).',
+      'Applied prompt engineering with Groq GPT-OSS-120B to build an AI bullet-polish rewriter, and integrated Hugging Face S-BERT for semantic similarity matching (23% precision improvement over keyword-only extraction).',
+      'Extended platform with ATS-simulation compatibility across 6 systems (Taleo, Workday, Greenhouse, iCIMS, Lever, Generic), validating structured-data extraction accuracy.',
+      'Automated candidate screening workflows, cutting manual document evaluation time and providing match-scored candidate breakdowns.',
+    ],
+  },
+  {
+    company: 'Tata Group (Forage)',
+    role: 'GenAI Analytics Associate',
+    period: 'July 2025 – April 2026',
+    achievements: [
+      'Executed end-to-end data analytics workflows using Generative AI for financial risk assessment and delinquency prediction.',
+      'Conducted exploratory data analysis (EDA) and built ML risk profiling models for customer segmentation to optimize collections decision-making.',
+      'Designed an AI-powered collections strategy framework and automated reporting to improve recovery rates and operational efficiency.',
     ],
   },
 ];

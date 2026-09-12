@@ -6,7 +6,7 @@ const achievements = [
   {
     icon: Trophy,
     category: 'Academic',
-    title: 'BSc Artificial Intelligence',
+    title: 'BS Artificial Intelligence',
     metric: '3.0+ CGPA',
     description: 'Specialized in Neural Networks, Agentic AI, and Scalable Systems at NUML University.',
   },
