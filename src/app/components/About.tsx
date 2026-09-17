@@ -204,8 +204,8 @@ export function About() {
           >
             <div className="absolute top-0 right-0 w-32 h-32 bg-rose-600/5 rounded-bl-full pointer-events-none" />
 
-            <h3 className="text-sm font-bold text-rose-500 uppercase tracking-widest mb-6 flex items-center gap-2">
-              <ShieldCheck className="w-4 h-4 text-rose-500" />
+            <h3 className="text-sm sm:text-base font-semibold text-rose-500 tracking-normal mb-6 flex items-center gap-2">
+              <ShieldCheck className="w-4 h-4 text-rose-500" aria-hidden="true" />
               Verified Background & Education
             </h3>
 
@@ -246,7 +246,7 @@ export function About() {
 
               {/* Engagement Highlights */}
               <div className="pt-1">
-                <h4 className="text-xs font-bold text-zinc-400 uppercase tracking-widest mb-3">Enterprise Engagements</h4>
+                <h4 className="text-xs font-semibold text-zinc-300 tracking-wide mb-3">Enterprise Engagements</h4>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1 bg-zinc-900 border border-zinc-800 rounded-lg text-xs font-medium text-zinc-300">
                     FlyRank AI (ML Intern)
@@ -292,7 +292,7 @@ export function About() {
                     <h4 className="text-xs sm:text-sm font-bold text-zinc-200 uppercase tracking-wider mb-1">
                       {metric.label}
                     </h4>
-                    <p className="text-[11px] sm:text-xs text-zinc-500 leading-snug">
+                    <p className="text-xs text-zinc-400 leading-snug">
                       {metric.detail}
                     </p>
                   </div>
@@ -336,7 +336,7 @@ export function About() {
                       <Icon className="w-6 h-6" />
                     </div>
                     <div>
-                      <span className="text-[10px] font-bold text-rose-500 uppercase tracking-widest block">
+                      <span className="text-xs font-semibold text-rose-500 tracking-wider block">
                         {pillar.subtitle}
                       </span>
                       <h4 className="text-base sm:text-lg font-bold text-white group-hover:text-rose-400 transition-colors leading-snug">
@@ -353,7 +353,7 @@ export function About() {
                     {pillar.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-2.5 py-1 text-[10px] font-semibold text-zinc-400 bg-zinc-900/80 border border-zinc-800 rounded-md"
+                        className="px-2.5 py-1 text-xs font-medium text-zinc-300 bg-zinc-900/80 border border-zinc-800 rounded-md"
                       >
                         {tag}
                       </span>

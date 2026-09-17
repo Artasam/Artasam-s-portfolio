@@ -66,9 +66,9 @@ export function Contact() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-xs sm:text-sm font-bold text-rose-600 uppercase tracking-widest mb-4 sm:mb-6">Contact</h2>
+            <h2 className="text-xs sm:text-sm font-semibold text-rose-500 uppercase tracking-wider mb-4 sm:mb-6">Contact</h2>
             <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 sm:mb-10 leading-tight">
-              Let's build something <span className="text-zinc-600">extraordinary.</span>
+              Let's build something <span className="text-zinc-500">extraordinary.</span>
             </h3>
             
             <p className="text-base sm:text-lg text-zinc-400 mb-8 sm:mb-12 font-medium leading-relaxed max-w-lg">
@@ -81,7 +81,7 @@ export function Contact() {
                   <Mail className="w-5 h-5" />
                 </div>
                 <div className="min-w-0">
-                  <p className="text-[9px] sm:text-[10px] font-bold text-zinc-500 uppercase tracking-widest mb-1">Email Me</p>
+                  <p className="text-xs font-semibold text-zinc-400 uppercase tracking-wider mb-1">Email Me</p>
                   <a href="mailto:artasambinrashid@gmail.com" className="text-base sm:text-lg font-bold text-white hover:text-rose-500 transition-colors break-all">
                     artasambinrashid@gmail.com
                   </a>
@@ -93,7 +93,7 @@ export function Contact() {
                   <MessageSquare className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-[9px] sm:text-[10px] font-bold text-zinc-500 uppercase tracking-widest mb-3 sm:mb-1">Social</p>
+                  <p className="text-xs font-semibold text-zinc-400 uppercase tracking-wider mb-3 sm:mb-1">Social</p>
                   <div className="flex gap-4">
                     <a href="https://www.linkedin.com/in/artasam-bin-rashid-46258a315/" target="_blank" className="text-white hover:text-rose-500 transition-colors">
                       <Linkedin className="w-5 h-5" />
@@ -127,37 +127,37 @@ export function Contact() {
           >
             <form onSubmit={handleSubmit} className="space-y-6 sm:space-y-8">
               <div className="space-y-2">
-                <label className="text-[9px] sm:text-[10px] font-bold text-zinc-500 uppercase tracking-widest ml-1">Full Name</label>
+                <label className="text-xs font-semibold text-zinc-400 tracking-wider ml-1">Full Name</label>
                 <input
                   type="text"
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full bg-zinc-900 border border-zinc-800 rounded-lg sm:rounded-xl px-4 sm:px-6 py-3 sm:py-4 text-white text-base focus:outline-none focus:border-rose-600 transition-colors placeholder:text-zinc-700"
+                  className="w-full bg-zinc-900 border border-zinc-800 rounded-lg sm:rounded-xl px-4 sm:px-6 py-3 sm:py-4 text-white text-base focus:outline-none focus:border-rose-600 transition-colors placeholder:text-zinc-500"
                   placeholder="John Doe"
                 />
               </div>
 
               <div className="space-y-2">
-                <label className="text-[9px] sm:text-[10px] font-bold text-zinc-500 uppercase tracking-widest ml-1">Email Address</label>
+                <label className="text-xs font-semibold text-zinc-400 tracking-wider ml-1">Email Address</label>
                 <input
                   type="email"
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full bg-zinc-900 border border-zinc-800 rounded-lg sm:rounded-xl px-4 sm:px-6 py-3 sm:py-4 text-white text-base focus:outline-none focus:border-rose-600 transition-colors placeholder:text-zinc-700"
+                  className="w-full bg-zinc-900 border border-zinc-800 rounded-lg sm:rounded-xl px-4 sm:px-6 py-3 sm:py-4 text-white text-base focus:outline-none focus:border-rose-600 transition-colors placeholder:text-zinc-500"
                   placeholder="john@example.com"
                 />
               </div>
 
               <div className="space-y-2">
-                <label className="text-[9px] sm:text-[10px] font-bold text-zinc-500 uppercase tracking-widest ml-1">Message</label>
+                <label className="text-xs font-semibold text-zinc-400 tracking-wider ml-1">Message</label>
                 <textarea
                   required
                   rows={4}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full bg-zinc-900 border border-zinc-800 rounded-lg sm:rounded-xl px-4 sm:px-6 py-3 sm:py-4 text-white text-base focus:outline-none focus:border-rose-600 transition-colors placeholder:text-zinc-700 resize-none"
+                  className="w-full bg-zinc-900 border border-zinc-800 rounded-lg sm:rounded-xl px-4 sm:px-6 py-3 sm:py-4 text-white text-base focus:outline-none focus:border-rose-600 transition-colors placeholder:text-zinc-500 resize-none"
                   placeholder="Tell me about your project or opportunity..."
                 />
               </div>
@@ -165,7 +165,7 @@ export function Contact() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-white text-black font-black uppercase tracking-widest py-4 sm:py-5 rounded-lg sm:rounded-xl hover:bg-rose-600 hover:text-white transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 sm:gap-3 text-sm sm:text-base min-h-12"
+                className="w-full bg-white text-black font-bold tracking-wide py-4 sm:py-5 rounded-lg sm:rounded-xl hover:bg-rose-600 hover:text-white transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 sm:gap-3 text-sm sm:text-base min-h-12"
               >
                 {isSubmitting ? 'Sending...' : 'Initialize Contact'}
                 <Send className="w-5 h-5" />

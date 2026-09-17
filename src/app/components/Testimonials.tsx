@@ -56,9 +56,9 @@ export function Testimonials() {
             viewport={{ once: true }}
             className="max-w-2xl"
           >
-            <h2 className="text-xs sm:text-sm font-bold text-rose-600 uppercase tracking-widest mb-3 sm:mb-4">Engineering Excellence</h2>
+            <h2 className="text-xs sm:text-sm font-semibold text-rose-500 uppercase tracking-wider mb-3 sm:mb-4">Engineering Excellence</h2>
             <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight">
-              measurable <span className="text-zinc-600">impact.</span>
+              measurable <span className="text-zinc-500">impact.</span>
             </h3>
           </motion.div>
         </div>
@@ -80,16 +80,16 @@ export function Testimonials() {
                   <Icon className="w-5 sm:w-6 h-5 sm:h-6" />
                 </div>
 
-                <span className="text-[8px] sm:text-[10px] font-bold text-rose-600 uppercase tracking-widest mb-2 block">
+                <span className="text-xs font-semibold text-rose-500 uppercase tracking-wider mb-2 block">
                   {achievement.category}
                 </span>
                 <h4 className="text-lg sm:text-xl font-bold text-white mb-2 group-hover:text-rose-500 transition-colors">
                   {achievement.title}
                 </h4>
-                <div className="text-xl sm:text-2xl font-black text-zinc-600 mb-3 sm:mb-4 group-hover:text-white transition-colors">
+                <div className="text-xl sm:text-2xl font-black text-zinc-400 mb-3 sm:mb-4 group-hover:text-white transition-colors">
                   {achievement.metric}
                 </div>
-                <p className="text-xs sm:text-sm text-zinc-500 leading-relaxed font-medium">
+                <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed font-medium">
                   {achievement.description}
                 </p>
               </motion.div>
@@ -109,7 +109,7 @@ export function Testimonials() {
               <Zap className="text-rose-600 w-5 sm:w-6 h-5 sm:h-6" />
               Core Competencies
             </h4>
-            <p className="text-zinc-500 text-base sm:text-lg mb-8 sm:mb-10 font-medium max-w-lg">
+            <p className="text-zinc-400 text-base sm:text-lg mb-8 sm:mb-10 font-medium max-w-lg">
               Specialized expertise in building the next generation of reasoning-driven AI systems and scalable ML infrastructures.
             </p>
 
@@ -123,8 +123,8 @@ export function Testimonials() {
             {skills.map((skill, index) => (
               <div key={skill.name} className="space-y-2 sm:space-y-3">
                 <div className="flex justify-between items-end gap-4">
-                  <span className="text-xs sm:text-sm font-bold text-white uppercase tracking-widest">{skill.name}</span>
-                  <span className="text-[10px] sm:text-xs font-mono text-zinc-500">{skill.level}%</span>
+                  <span className="text-xs sm:text-sm font-semibold text-white tracking-wide">{skill.name}</span>
+                  <span className="text-xs font-mono text-zinc-400">{skill.level}%</span>
                 </div>
                 <div className="h-1 bg-zinc-900 rounded-full overflow-hidden">
                   <motion.div

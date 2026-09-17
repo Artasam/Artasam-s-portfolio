@@ -18,7 +18,7 @@ export function Navbar() {
           <Logo />
           <div className="flex flex-col">
             <span className="font-black text-white uppercase tracking-tighter leading-none text-sm sm:text-base group-hover:text-rose-500 transition-colors">Artasam</span>
-            <span className="text-[6px] sm:text-[7px] font-black text-rose-600 uppercase tracking-[0.2em] mt-0.5 opacity-80">Engineering</span>
+            <span className="text-xs font-bold text-rose-500 uppercase tracking-wider mt-0.5">Engineering</span>
           </div>
         </div>
         
@@ -30,7 +30,7 @@ export function Navbar() {
               <a 
                 key={item}
                 href={`#${item.toLowerCase()}`}
-                className="text-[9px] sm:text-[10px] font-bold text-zinc-500 hover:text-white uppercase tracking-widest transition-colors"
+                className="text-xs font-semibold text-zinc-400 hover:text-white uppercase tracking-wider transition-colors"
               >
                 {item}
               </a>
@@ -38,7 +38,7 @@ export function Navbar() {
           </div>
           <a 
             href="#contact"
-            className="px-3 sm:px-4 py-2 bg-rose-600 text-white text-[9px] sm:text-[10px] font-bold uppercase tracking-widest rounded-full hover:bg-white hover:text-black transition-all"
+            className="px-3.5 sm:px-4 py-2 bg-rose-600 text-white text-xs font-bold uppercase tracking-wider rounded-full hover:bg-white hover:text-black transition-all"
           >
             Hire Me
           </a>

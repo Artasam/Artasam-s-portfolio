@@ -39,14 +39,14 @@ export function TechMarquee() {
           {techs.map((tech, i) => (
             <div key={i} className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
               <span className="w-1.5 sm:w-2 h-1.5 sm:h-2 rounded-full bg-rose-600 sm:shadow-[0_0_8px_rgba(225,29,72,0.6)]" />
-              <span className="text-xs sm:text-sm font-bold text-zinc-500 uppercase tracking-widest">{tech}</span>
+              <span className="text-xs sm:text-sm font-medium text-zinc-300 tracking-normal">{tech}</span>
             </div>
           ))}
           {/* Duplicate set for seamless loop */}
           {techs.map((tech, i) => (
             <div key={`dup-${i}`} className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
               <span className="w-1.5 sm:w-2 h-1.5 sm:h-2 rounded-full bg-rose-600 sm:shadow-[0_0_8px_rgba(225,29,72,0.6)]" />
-              <span className="text-xs sm:text-sm font-bold text-zinc-500 uppercase tracking-widest">{tech}</span>
+              <span className="text-xs sm:text-sm font-medium text-zinc-300 tracking-normal">{tech}</span>
             </div>
           ))}
         </motion.div>

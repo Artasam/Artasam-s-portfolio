@@ -52,9 +52,9 @@ export function Projects() {
             viewport={{ once: true }}
             className="max-w-2xl"
           >
-            <h2 className="text-xs sm:text-sm font-bold text-rose-600 uppercase tracking-widest mb-3 sm:mb-4">Selected Work</h2>
+            <h2 className="text-xs sm:text-sm font-semibold text-rose-500 uppercase tracking-wider mb-3 sm:mb-4">Selected Work</h2>
             <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight">
-              Engineering solutions that <span className="text-zinc-600">scale.</span>
+              Engineering solutions that <span className="text-zinc-500">scale.</span>
             </h3>
           </motion.div>
           <motion.div
@@ -63,7 +63,7 @@ export function Projects() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <p className="text-zinc-500 font-medium max-w-xs md:text-right">
+            <p className="text-zinc-400 font-medium max-w-xs md:text-right">
               A sample of 10+ projects across AI, MLOps, and scalable web architectures.
             </p>
           </motion.div>
@@ -81,10 +81,10 @@ export function Projects() {
             >
               {/* Card Header */}
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4 mb-6 sm:mb-8">
-                <span className="text-[9px] sm:text-[10px] font-bold text-zinc-500 uppercase tracking-[0.2em] px-3 py-1 bg-zinc-900 border border-zinc-800 rounded-full w-fit">
+                <span className="text-xs font-semibold text-zinc-400 uppercase tracking-wider px-3 py-1 bg-zinc-900 border border-zinc-800 rounded-full w-fit">
                   {project.category}
                 </span>
-                <span className="text-xs font-mono text-zinc-600">{project.year}</span>
+                <span className="text-xs font-mono text-zinc-400">{project.year}</span>
               </div>
 
               {/* Title */}
@@ -108,7 +108,7 @@ export function Projects() {
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="px-3 py-1 text-[10px] font-bold text-zinc-400 bg-zinc-900 border border-zinc-800 rounded-md uppercase tracking-wider"
+                    className="px-3 py-1 text-xs font-semibold text-zinc-300 bg-zinc-900 border border-zinc-800 rounded-md tracking-wide"
                   >
                     {tag}
                   </span>
@@ -144,9 +144,11 @@ export function Projects() {
             href="https://github.com/Artasam"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-4 px-10 py-5 bg-white text-black font-black text-sm uppercase tracking-widest rounded-full hover:bg-rose-600 hover:text-white transition-all shadow-2xl shadow-rose-600/10"
+            aria-label="Explore full portfolio on GitHub (opens in a new tab)"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-white text-black font-bold text-sm rounded-full hover:bg-rose-600 hover:text-white transition-all shadow-2xl shadow-rose-600/10"
           >
-            Explore Full Portfolio <Github className="w-5 h-5" />
+            <span>Explore Full Portfolio</span>
+            <Github className="w-5 h-5" aria-hidden="true" />
           </a>
         </motion.div>
       </div>

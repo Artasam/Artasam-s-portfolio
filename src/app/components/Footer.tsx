@@ -31,11 +31,11 @@ export function Footer() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 sm:gap-12">
             <div>
-              <h4 className="text-[8px] sm:text-[10px] font-bold text-rose-600 uppercase tracking-[0.2em] mb-4 sm:mb-6">Navigation</h4>
+              <h4 className="text-xs font-semibold text-rose-500 uppercase tracking-wider mb-4 sm:mb-6">Navigation</h4>
               <ul className="space-y-2 sm:space-y-4">
                 {['About', 'Projects', 'Experience', 'Contact'].map((link) => (
                   <li key={link}>
-                    <a href={`#${link.toLowerCase()}`} className="text-xs sm:text-sm font-bold text-zinc-500 hover:text-white transition-colors uppercase tracking-widest">
+                    <a href={`#${link.toLowerCase()}`} className="text-xs sm:text-sm font-medium text-zinc-400 hover:text-white transition-colors tracking-wide">
                       {link}
                     </a>
                   </li>
@@ -44,22 +44,22 @@ export function Footer() {
             </div>
 
             <div className="col-span-2">
-              <h4 className="text-[8px] sm:text-[10px] font-bold text-rose-600 uppercase tracking-[0.2em] mb-4 sm:mb-6">Contact</h4>
+              <h4 className="text-xs font-semibold text-rose-500 uppercase tracking-wider mb-4 sm:mb-6">Contact</h4>
               <p className="text-lg sm:text-xl font-bold text-white mb-1 sm:mb-2 break-all text-sm sm:text-base">artasambinrashid@gmail.com</p>
-              <p className="text-zinc-500 font-medium text-xs sm:text-sm">Islamabad, Pakistan</p>
+              <p className="text-zinc-400 font-medium text-xs sm:text-sm">Islamabad, Pakistan</p>
             </div>
           </div>
         </div>
 
         <div className="pt-8 sm:pt-12 border-t border-zinc-900 flex flex-col-reverse sm:flex-row sm:items-center justify-between gap-6 sm:gap-8">
-          <p className="text-[8px] sm:text-[10px] font-bold text-zinc-600 uppercase tracking-[0.2em] text-center sm:text-left">
-            © 2026 ARTASAM BIN RASHID. ALL RIGHTS RESERVED.
+          <p className="text-xs text-zinc-400 text-center sm:text-left">
+            © {new Date().getFullYear()} Artasam bin Rashid. All rights reserved.
           </p>
 
           <motion.button
             onClick={scrollToTop}
             whileHover={{ y: -5 }}
-            className="group flex items-center justify-center sm:justify-start gap-2 sm:gap-3 text-[8px] sm:text-[10px] font-bold text-zinc-600 uppercase tracking-[0.2em] hover:text-white transition-colors"
+            className="group flex items-center justify-center sm:justify-start gap-2 sm:gap-3 text-xs font-medium text-zinc-400 hover:text-white transition-colors"
           >
             Back to Top
             <div className="w-7 sm:w-8 h-7 sm:h-8 rounded-full border border-zinc-800 flex items-center justify-center group-hover:border-rose-600 transition-colors">

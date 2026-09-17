@@ -40,9 +40,9 @@ export function Research() {
             viewport={{ once: true }}
             className="max-w-2xl"
           >
-            <h2 className="text-xs sm:text-sm font-bold text-rose-600 uppercase tracking-widest mb-3 sm:mb-4">Credentials</h2>
+            <h2 className="text-xs sm:text-sm font-semibold text-rose-500 uppercase tracking-wider mb-3 sm:mb-4">Credentials</h2>
             <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight">
-              verified <span className="text-zinc-600">expertise.</span>
+              verified <span className="text-zinc-500">expertise.</span>
             </h3>
           </motion.div>
         </div>
@@ -63,10 +63,10 @@ export function Research() {
                 </div>
                 
                 <div className="flex flex-wrap gap-2 mb-4 sm:mb-6">
-                  <span className="px-2.5 sm:px-3 py-1 sm:py-1.5 text-[8px] sm:text-[10px] font-bold text-rose-500 bg-rose-500/5 border border-rose-500/20 rounded-md uppercase tracking-wider">
+                  <span className="px-2.5 sm:px-3 py-1 sm:py-1.5 text-xs font-semibold text-rose-500 bg-rose-500/5 border border-rose-500/20 rounded-md tracking-wider">
                     {paper.venue}
                   </span>
-                  <span className="px-2.5 sm:px-3 py-1 sm:py-1.5 text-[8px] sm:text-[10px] font-bold text-zinc-500 bg-zinc-900 border border-zinc-800 rounded-md uppercase tracking-wider">
+                  <span className="px-2.5 sm:px-3 py-1 sm:py-1.5 text-xs font-semibold text-zinc-400 bg-zinc-900 border border-zinc-800 rounded-md tracking-wider">
                     {paper.type}
                   </span>
                 </div>
@@ -75,7 +75,7 @@ export function Research() {
                   {paper.title}
                 </h4>
                 
-                <p className="text-xs sm:text-sm text-zinc-500 leading-relaxed font-medium">
+                <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed font-medium">
                   {paper.abstract}
                 </p>
               </div>

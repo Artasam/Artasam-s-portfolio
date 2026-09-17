@@ -183,7 +183,7 @@ export function Hero() {
             transition={{ delay: 1.2 }}
             className="mt-10 sm:mt-16 pt-6 sm:pt-10 border-t border-zinc-800"
           >
-            <p className="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-4 sm:mb-6">Core Capabilities</p>
+            <p className="text-xs font-semibold text-zinc-400 tracking-wide mb-4 sm:mb-6">Core Capabilities</p>
             <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-8">
               {[
                 { icon: <Layers className="w-5 h-5" />, label: "ML Pipelines" },
@@ -259,7 +259,7 @@ export function Hero() {
           </div>
           <div>
             <p className="text-sm font-bold text-white leading-tight">Artasam Bin Rashid</p>
-            <p className="text-[10px] font-bold text-rose-500 uppercase tracking-wider">Expert Engineer</p>
+            <p className="text-xs font-semibold text-rose-500 tracking-wider">Expert Engineer</p>
           </div>
         </motion.div>
       </div>
@@ -272,7 +272,7 @@ export function Hero() {
         className="absolute bottom-10 left-1/2 -translate-x-1/2 hidden md:block z-20"
       >
         <div className="flex flex-col items-center gap-2">
-          <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest">Scroll</span>
+          <span className="text-xs font-medium text-zinc-400 tracking-wider">Scroll</span>
           <motion.div
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
