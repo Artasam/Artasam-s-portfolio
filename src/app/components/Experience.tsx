@@ -65,7 +65,7 @@ export function Experience() {
           >
             <h2 className="text-xs sm:text-sm font-semibold text-rose-500 tracking-wide mb-3 sm:mb-4">Professional History</h2>
             <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight">
-              Impact driven <span className="text-zinc-500">experience.</span>
+              Impact Driven <span className="text-zinc-500">Experience.</span>
             </h3>
           </motion.div>
         </div>

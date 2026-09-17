@@ -58,7 +58,7 @@ export function Testimonials() {
           >
             <h2 className="text-xs sm:text-sm font-semibold text-rose-500 uppercase tracking-wider mb-3 sm:mb-4">Engineering Excellence</h2>
             <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight">
-              measurable <span className="text-zinc-500">impact.</span>
+              Measurable <span className="text-zinc-500">Impact.</span>
             </h3>
           </motion.div>
         </div>

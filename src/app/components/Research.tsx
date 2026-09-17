@@ -42,7 +42,7 @@ export function Research() {
           >
             <h2 className="text-xs sm:text-sm font-semibold text-rose-500 uppercase tracking-wider mb-3 sm:mb-4">Credentials</h2>
             <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight">
-              verified <span className="text-zinc-500">expertise.</span>
+              Verified <span className="text-zinc-500">Expertise.</span>
             </h3>
           </motion.div>
         </div>
@@ -61,7 +61,7 @@ export function Research() {
                 <div className="w-10 sm:w-14 h-10 sm:h-14 bg-zinc-900 rounded-lg sm:rounded-2xl flex items-center justify-center text-zinc-500 group-hover:text-rose-500 group-hover:bg-rose-500/10 transition-all mb-4 sm:mb-8">
                   <Award className="w-5 sm:w-7 h-5 sm:h-7" />
                 </div>
-                
+
                 <div className="flex flex-wrap gap-2 mb-4 sm:mb-6">
                   <span className="px-2.5 sm:px-3 py-1 sm:py-1.5 text-xs font-semibold text-rose-500 bg-rose-500/5 border border-rose-500/20 rounded-md tracking-wider">
                     {paper.venue}
@@ -74,7 +74,7 @@ export function Research() {
                 <h4 className="text-lg sm:text-2xl font-bold text-white mb-3 sm:mb-4 group-hover:text-rose-500 transition-colors">
                   {paper.title}
                 </h4>
-                
+
                 <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed font-medium">
                   {paper.abstract}
                 </p>
